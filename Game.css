@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #404040;
+    --secondary-color: #2c2c2c;
+    --background-color: #f5f5f5;
+    --text-color: #333333;
+    --accent-color: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #e6e6e6 100%);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+.nav-bar {
+    background-color: #032B44; /* Changed background color to navy blue */
+    padding: 10px;
+    text-align: center;
+}
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-bar a:hover {
+    color: #ccc; /* Changed hover color to a darker shade */
+}
+.drop-down {
+    position: relative;
+    display: inline-block;
+}
+.drop-down-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Changed background color to charcoal gray */
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.drop-down-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop-down-content a:hover {
+    background-color: #444; /* Changed hover background color to a darker shade */
+}
+.drop-down:hover .drop-down-content {
+    display: block;
+}
+.container {
+    max-width: 1200px;
+    margin: 6rem auto 2rem;
+    padding: 0 2rem;
+}
+
+.game-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.treasure-cell {
+    aspect-ratio: 1;
+    background: var(--background-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.treasure-cell:hover {
+    transform: scale(1.05);
+}
+
+.game-info {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: var(--secondary-color);
+}
+
+.hint {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--background-color);
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .game-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nav-container {
+        padding: 0 1rem;
+    }
+    .nav-links a {
+        margin: 0 0.5rem;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+    .game-section {
+        padding: 1rem;
+    }
+    .section-title {
+        margin-bottom: 1rem;
+    }
+    .game-info {
+        margin: 1rem 0;
+    }
+    .game-controls {
+        margin: 0.5rem 0;
+    }
+    .hint {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+}

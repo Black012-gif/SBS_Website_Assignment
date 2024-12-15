@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Contact.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li class="drop-down">
+                <a href="#">Pages</a>
+                <div class="drop-down-content">
+                    <a href="Index.html">Index</a>
+                    <a href="Information.html">Informations</a>
+                    <a href="Skill.html">Skills</a>
+                    <a href="Experience.html">Work Experience</a>
+                    <a href="Contact.html">Contact Content</a>
+                    <a href="Game.html">Viewer Entertainment</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <h1 class="title">Contact</h1>
+    <div class="contact-container">
+        <div class="card">
+            <i class="fas fa-phone-alt card-icon"></i>
+            <h3>Phone</h3>
+            <p>+84 896 141 301</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-envelope card-icon"></i>
+            <h3>Email</h3>
+            <p>thant.naing0046@sbsuni.edu.vn</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-map-marker-alt card-icon"></i>
+            <h3>Address</h3>
+            <p>Ho Chi Minh, Vietnam</p>
+        </div>
+    </div>
+    
+    <div class="social-media-container">
+        <div class="card">
+            <i class="fab fa-facebook card-icon"></i>
+            <h3>Facebook</h3>
+            <p><a href="https://www.facebook.com/eko.zhi.xue.yon.lingyon" target="_blank">Facebook</a></p>
+        </div>
+        <div class="card">
+            <i class="fab fa-github card-icon"></i>
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/Black012-gif/SBS" target="_blank">GitHub</a></p>
+        </div>
+    </div>
+
+    <div class="contact-form-container">
+        <h2 class="form-title">Send a Message</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send</button>
+        </form>
+    </div>
+</body>
+</html>

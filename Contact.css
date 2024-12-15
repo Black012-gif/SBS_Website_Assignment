@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.nav-bar {
+    background-color: #032B44; /* Changed background color to navy blue */
+    padding: 10px;
+    text-align: center;
+}
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-bar a:hover {
+    color: #ccc; /* Changed hover color to a darker shade */
+}
+.drop-down {
+    position: relative;
+    display: inline-block;
+}
+.drop-down-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Changed background color to charcoal gray */
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.drop-down-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop-down-content a:hover {
+    background-color: #444; /* Changed hover background color to a darker shade */
+}
+.drop-down:hover .drop-down-content {
+    display: block;
+}
+.title {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+.contact-container, .social-media-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.card p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}

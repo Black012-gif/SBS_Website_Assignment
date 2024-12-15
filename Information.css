@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+}
+.nav-bar {
+    background-color: #032B44;
+    padding: 10px;
+    text-align: center;
+}
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.nav-bar a:hover {
+    color: #ccc;
+}
+.drop-down-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.drop-down-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop-down-content a:hover {
+    background-color: #555;
+}
+.drop-down:hover .drop-down-content {
+    display: block;
+}
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #032B44;
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card-icon {
+    font-size: 3rem;
+    color: #032B44;
+    margin-bottom: 10px;
+}
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 5px solid #032B44;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section {
+    margin-bottom: 40px;
+}
+.personal-overview-container, 
+.education-container, 
+.achievements-container, 
+.certifications-container, 
+.hobbies-container {
+    background-color: #eef6fc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}

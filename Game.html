@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Mini Game 🎮</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Game.css">
+    <script src="../JS/Game.js" defer></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li class="drop-down">
+                <a href="#">Pages</a>
+                <div class="drop-down-content">
+                    <a href="Index.html">Index</a>
+                    <a href="Information.html">Informations</a>
+                    <a href="Skill.html">Skills</a>
+                    <a href="Experience.html">Work Experience</a>
+                    <a href="Contact.html">Contact Content</a>
+                    <a href="Game.html">Viewer Entertainment</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <section class="game-section">
+            <div class="section-title">
+                <h2>Treasure Hunt Game 🗺️</h2>
+                <p>Find the hidden treasure in 10 attempts! 🏴‍☠️</p>
+            </div>
+            
+            <div class="game-info">
+                <p>Attempts Remaining: <span id="attempts">10</span> 🎯</p>
+                <p>Score: <span id="score">0</span> 🏆</p>
+            </div>
+
+            <div class="hint" id="hint">
+                Start hunting for the treasure! 🔍
+            </div>
+
+            <div class="game-grid" id="gameGrid"></div>
+
+            <div class="game-controls">
+                <button onclick="resetGame()">New Game 🔄</button>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
